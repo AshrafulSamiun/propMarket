@@ -19,11 +19,10 @@
 
         </div>
         <div class="card-body">
-          <div class="pull-left">
-            <label for="filter" class="sr-only">Filter</label>
-            <input type="text" class="form-control" v-model="filter" placeholder="Filter" style="width:400px;">
+          <div class="mb-2">
+            <input type="text" v-model="filter" class="form-control" placeholder="Search..." style="width:400px;"/>
           </div>
-          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" class="advanced-table whitespace-nowrap">
+          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" :search="filter" class="advanced-table whitespace-nowrap">
             <template #id="data">
               <strong class="text-info">{{ data.value.id }}</strong>
             </template>
@@ -224,16 +223,13 @@ export default {
             $('.modal.in').modal('hide');
             $('.modal-backdrop').remove();
 
-            toast({
-              type: 'success',
-              title: 'Data Update Successfully'
-            });
+            showToast('Data Update Successfully', 'success');
 
             this.form.reset();
             this.fetchMenus();
           })
           .catch(() => {
-            Swal("failed!", "there was some wrong", "warning");
+            showAlert("failed!", "there was some wrong", "warning");
 
           });
     },
@@ -263,7 +259,7 @@ export default {
         this.form.delete('/Menus/' + id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your file has been deleted.',
                 'success'
@@ -272,7 +268,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })

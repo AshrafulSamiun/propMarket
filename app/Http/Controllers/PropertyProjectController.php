@@ -1414,7 +1414,6 @@ class PropertyProjectController extends Controller
             $sl++;
             
         }
-        dd($unit_subrooms_list_arr);die;
 
         $data['unit_subrooms_list_arr']          =$unit_subrooms_list_arr;
 

@@ -1,8 +1,6 @@
 <template>
-
   <fieldset>
-    <form id="msform" @submit.prevent="editmode ? updateCompanyProfile() : createCompanyProfile()"
-          @keydown="form.onKeydown($event)">
+    <form id="msform" @submit.prevent="editmode ? updateCompanyProfile() : createCompanyProfile()" @keydown="form.onKeydown($event)">
       <div class="form-card">
         <div class="form-folder">
           <h3><i class="fa fa-hand-point-right"></i> Open File:</h3>
@@ -10,11 +8,10 @@
             <div class="row align-self-stretch">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="form-box-outer">
-                  <div class="pull-left" style="margin-top:50px;">
-                    <label for="filter" class="sr-only">Filter</label>
-                    <input type="text" class="form-control" v-model="filter" placeholder="Filter" style="width:400px;">
+                  <div class="mb-2">
+                    <input type="text" v-model="filter" class="form-control" placeholder="Search..." style="width:400px;"/>
                   </div>
-                  <vue3-datatable :rows="form.company_arr" :columns="columns" rowClass="cursor-pointer" @rowClick="change_company"> </vue3-datatable>
+                  <vue3-datatable :rows="form.company_arr" :columns="columns" rowClass="cursor-pointer" :search="filter" @rowClick="change_company"> </vue3-datatable>
                 </div>
               </div>
             </div>
@@ -44,7 +41,6 @@ export default {
       show_company: true,
       filter: '',
       form: new Form({
-
         company_avaibale: true,
         company_id: "",
         company_type: '',

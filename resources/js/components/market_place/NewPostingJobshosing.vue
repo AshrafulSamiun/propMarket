@@ -1409,7 +1409,7 @@ export default {
             this.fetchNewPostingJobs();
           })
           .catch(() => {
-            Swal("failed!", "there was some wrong", "warning");
+            showAlert("failed!", "there was some wrong", "warning");
           });
     },
 

@@ -1,5 +1,4 @@
 <template>
-
   <fieldset>
     <form id="msform" @submit.prevent="editmode ? updateBuildingInfo() : createCompanyProfile()" @keydown="form.onKeydown($event)">
       <div class="form-card">
@@ -10,11 +9,10 @@
           <button :disabled="form.busy"  type="button" class="btn  btn-primary" style="min-width:110px" v-show="editmode">Print</button>
         </div>
         <div v-if="list_showable" class="card-body">
-          <div class="pull-left" style="margin-top:50px;">
-            <label for="filter" class="sr-only">Filter</label>
-            <input type="text" class="form-control" v-model="filter" placeholder="Filter" style="width:400px;">
+          <div class="mb-2">
+            <input type="text" v-model="filter" class="form-control" placeholder="Search..." style="width:400px;"/>
           </div>
-          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" class="advanced-table whitespace-nowrap">
+          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" :search="filter" class="advanced-table whitespace-nowrap">
             <template #sl="data">
               <strong class="text-info">{{ data.value.sl }}</strong>
             </template>
@@ -2093,22 +2091,13 @@ export default {
 
           var response_data = response.data.split("**");
           if (response_data[0] == 1) {
-            Swal(
-                'Posted!',
-                'Your Data has been Posted.',
-                'success'
-            );
-
+            showAlert("Posted!", "Your Data has been Posted.", "success");
             this.editBuildingInfo(response_data[1]);
-
           }
-
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
-
       })
-
     },
 
     repost() {
@@ -2127,7 +2116,7 @@ export default {
 
           var response_data = response.data.split("**");
           if (response_data[0] == 1) {
-            Swal(
+            showAlert(
                 'Posted!',
                 'Your Data has been Reposted.',
                 'success'
@@ -2137,7 +2126,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })
@@ -2155,10 +2144,10 @@ export default {
 
           this.editmode = true;
         } else {
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       }).catch(() => {
-        Swal("failed!", "there was some wrong", "warning");
+        showAlert("failed!", "there was some wrong", "warning");
       });
 
     },
@@ -3010,7 +2999,7 @@ export default {
           $('.modal-backdrop').remove();
 
         } else {
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       });
 
@@ -3031,7 +3020,7 @@ export default {
         this.form.delete('/BuildingInfos/' + this.form.id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your Data has been deleted.',
                 'success'
@@ -3041,7 +3030,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })
@@ -3059,7 +3048,7 @@ export default {
           this.editmode = true;
 
         } else {
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       });
     },
@@ -3069,13 +3058,13 @@ export default {
 
       if (this.form.dependent_building == false && this.form.independent_building == false) {
 
-        Swal("Warning!", "Please Select Dependency Class", "warning");
+        showAlert("Warning!", "Please Select Dependency Class", "warning");
         return;
 
       }
       if (this.form.residential == false && this.form.commercial == false && this.form.residential_commercial == false) {
 
-        Swal("Warning!", "Please Select Property Type", "warning");
+        showAlert("Warning!", "Please Select Property Type", "warning");
         return;
 
       }
@@ -3096,7 +3085,7 @@ export default {
             this.fetchBuildingProfile();
           }
         } else {
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       })
     },

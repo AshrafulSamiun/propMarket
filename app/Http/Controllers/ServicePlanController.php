@@ -15,7 +15,6 @@ class ServicePlanController extends Controller
      */
     public function index()
     {
-        
         $ArrayFunction          =new ArrayFunction();
         $row_status             =$ArrayFunction->row_status;
         $servicePlan            =ServicePlan::all();
@@ -28,9 +27,9 @@ class ServicePlanController extends Controller
             {
                 $master_plan_arr[$value->id]=$value->plan_name;
             }
-            
         }
-//dd($master_plan_arr);die;
+
+        $servicePlan_arr = [];
         foreach ($servicePlan as $key => $value) {
 
             $servicePlan_arr[$sl]['sl']                     =$sl+1;
@@ -54,8 +53,8 @@ class ServicePlanController extends Controller
             {
                 $servicePlan_arr[$sl]['master_plan_name']   ="";
             }
-            $servicePlan_arr[$sl]['status_st']              =$row_status[$value->status];
-            $servicePlan_arr[$sl]['amount_applicable_st']   =$yes_no[$value->amount_applicable];
+            $servicePlan_arr[$sl]['status_st']              =$row_status[$value->status] ?? "Active";
+            $servicePlan_arr[$sl]['amount_applicable_st']   =$yes_no[$value->amount_applicable] ?? "No";
             $sl++;
         }
 

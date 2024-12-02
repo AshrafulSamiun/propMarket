@@ -1,4 +1,13 @@
-import Hello from '../components/Temporary/Hello.vue'
+import ManagementType from '../components/Temporary/Management-Type.vue';
+import TaxCompanyProfile from '../components/Temporary/Company-Profile.vue';
+import ContactPerson from '../components/Temporary/Contact-Person.vue';
+import ServicePlan from '../components/Temporary/Service-Plan.vue';
+import ServiceContact from '../components/Temporary/Service-Contact.vue';
+import TermCondition from '../components/Temporary/Term-Condition.vue';
+import DocumentSubmission from '../components/Temporary/Document-Submition.vue';
+import ActivationStatus from '../components/Temporary/Activation-Status.vue';
+
+import OpenFile from '../components/OpenFiles.vue';
 import Building from '../components/Property/Building.vue';
 import Floors from '../components/Property/Floor.vue';
 import ResidentalSuites from '../components/Property/ResidentalSuite.vue';
@@ -10,12 +19,10 @@ import StorageLot from '../components/Property/StorageLot.vue';
 import CommonArea from '../components/Property/CommonArea.vue';
 import MailRoom from '../components/Property/MailRoom.vue';
 import PropertyAttrebution from '../components/Property/PropertyAttrebution.vue';
-import AccountPeriod from '../components/New/AccountPeriod.vue';
 import NewPostingJobs from '../components/market_place/NewPostingJobs.vue';
 import NewPostingJobshosing from '../components/market_place/NewPostingJobshosing.vue';
 import Modules from '../components/Module.vue';
 import Menus from '../components/menu.vue';
-import OpenFile from '../components/OpenFiles.vue';
 
 import Bank from '../components/Account_Holders/Bank.vue';
 import BoardofDirector from '../components/Account_Holders/BoardofDirector.vue';
@@ -37,35 +44,52 @@ import Tenant from '../components/Account_Holders/Tenant.vue';
 import Visitor from '../components/Account_Holders/Visitor.vue';
 import Volunteer from '../components/Account_Holders/Volunteer.vue';
 
-export const routes = [
+import AccountPeriod from '../components/New/AccountPeriod.vue';
+import CoaSetting from '../components/New/CoaSetting.vue';
+import ChartAccounts from '../components/New/Coa.vue';
+import ServiceItem from '../components/New/ServiceItems.vue';
+import InventoryItem from '../components/New/InventoryItems.vue';
+import FixedAsset from '../components/New/FixedAsset.vue';
+import Project from '../components/New/Project.vue';
+import CompanyProfile from '../components/New/Company-Profile.vue';
+import RulePolicy from '../components/New/Rule-Policy.vue';
+import ProcedureInstruction from '../components/New/Procudure-Instruction.vue';
+import Utilities from '../components/New/Utilities.vue';
 
+import Purchase from '../components/Operating_Module/Purchase.vue';
+import Sales from '../components/Operating_Module/Sales.vue';
+
+import Users from '../components/User.vue';
+import UserPrivilige from '../components/UserPrivilige.vue';
+import UserProfile from '../components/UserProfile.vue';
+import CompanyInfo from '../components/Account_Setup/CompanyInfo.vue';
+import Countries from '../components/Setting/Coutry.vue';
+import Proviences from '../components/Setting/Provience.vue';
+import ServicePlans from '../components/Setting/ServicePlan.vue';
+
+export const routes = [
     //============================Temp user============================================================================================
-    { name: 'Temp-Management-Type',           path: '/Temp-Management-Type',          component: Hello },
-    { name: 'Temp-CompanyProfile',            path: '/Temp-CompanyProfile',           component: Hello },
-    { name: 'Temp-ContactsPersons',           path: '/Temp-ContactsPersons',          component: Hello },
-    { name: 'Temp-ServicePlan',               path: '/Temp-ServicePlan',              component: Hello },
-    { name: 'Temp-ServiceContract',           path: '/Temp-ServiceContract',          component: Hello },
-    { name: 'Temp-TermsOfAgreement',          path: '/Temp-TermsOfAgreement',         component: Hello },
-    { name: 'Temp-DocumentsSubmission',       path: '/Temp-DocumentsSubmission',      component: Hello },
-    { name: 'Temp-ActivationStatus',          path: '/Temp-ActivationStatus',         component: Hello },
+    { name: 'Temp-Management-Type',           path: '/Temp-Management-Type',          component: ManagementType },
+    { name: 'Temp-CompanyProfile',            path: '/Temp-CompanyProfile',           component: TaxCompanyProfile },
+    { name: 'Temp-ContactsPersons',           path: '/Temp-ContactsPersons',          component: ContactPerson },
+    { name: 'Temp-ServicePlan',               path: '/Temp-ServicePlan',              component: ServicePlan },
+    { name: 'Temp-ServiceContract',           path: '/Temp-ServiceContract',          component: ServiceContact },
+    { name: 'Temp-TermsOfAgreement',          path: '/Temp-TermsOfAgreement',         component: TermCondition },
+    { name: 'Temp-DocumentsSubmission',       path: '/Temp-DocumentsSubmission',      component: DocumentSubmission },
+    { name: 'Temp-ActivationStatus',          path: '/Temp-ActivationStatus',         component: ActivationStatus },
 
     // ============================New=============================================================================
-    { name: 'Company-Profile',                path: '/Company-Profile',               component: Hello },
-    { name: 'Customer-Property',              path: '/Customer-Property',             component: Hello },
-    { name: 'Application-Form',               path: '/Application-Form',              component: Hello },
-    { name: 'Customer-Seller',                path: '/Customer-Seller',               component: Hello },
-    { name: 'Customer-Service',               path: '/Customer-Service',              component: Hello },
-    { name: 'Rule-Policy',                    path: '/Rule-Policy',                   component: Hello },
-    { name: 'Procudure-Instruction',          path: '/Procudure-Instruction',         component: Hello },
-    { name: 'Account-Holder',                 path: '/Account-Holder',                component: Hello },
-    { name: 'Coa-Setting',                    path: '/Coa-Setting',                   component: Hello },
-    { name: 'Chart-Accounts',                 path: '/Chart-Accounts',                component: Hello },
-    { name: 'Taxes',                          path: '/Taxes',                         component: Hello },
-    { name: 'Service-Item',                   path: '/Service-Item',                  component: Hello },
-    { name: 'Inventory-Item',                 path: '/Inventory-Item',                component: Hello },
-    { name: 'Fixed-Asset',                    path: '/Fixed-Asset',                   component: Hello },
-    { name: 'Project',                        path: '/Project',                       component: Hello },
-    { name: 'Utilities',                      path: '/Utilities',                     component: Hello },
+    { name: 'Account-period',                 path: '/Account-period',                component: AccountPeriod },
+    { name: 'Coa-Setting',                    path: '/Coa-Setting',                   component: CoaSetting },
+    { name: 'Chart-Accounts',                 path: '/Chart-Accounts',                component: ChartAccounts },
+    { name: 'Inventory-Item',                 path: '/Inventory-Item',                component: InventoryItem },
+    { name: 'Service-Item',                   path: '/Service-Item',                  component: ServiceItem },
+    { name: 'Fixed-Asset',                    path: '/Fixed-Asset',                   component: FixedAsset },
+    { name: 'Project',                        path: '/Project',                       component: Project },
+    { name: 'Company-Profile',                path: '/Company-Profile',               component: CompanyProfile },
+    { name: 'Rule-Policy',                    path: '/Rule-Policy',                   component: RulePolicy },
+    { name: 'Procudure-Instruction',          path: '/Procudure-Instruction',         component: ProcedureInstruction },
+    { name: 'Utilities',                      path: '/Utilities',                     component: Utilities },
 
     //================================Property===========================================================================================================
     { name: 'Building',                       path: '/Building',                      component: Building },
@@ -86,9 +110,8 @@ export const routes = [
     { name: 'Open-File',                      path: '/Open-File',                     component: OpenFile },
 
     //=======================================Transaction=================================================================================
-    { name: 'Purchase',                       path: '/Purchase',                      component: Hello },
-    { name: 'Sales',                          path: '/Sales',                         component: Hello },
-    { name: 'Forms',                          path: '/Forms',                         component: Hello },
+    { name: 'Purchase',                       path: '/Purchase',                      component: Purchase },
+    { name: 'Sales',                          path: '/Sales',                         component: Sales },
 
     //============================Account Holder=========================================
     { name: 'Bank',                           path: '/Bank',                          component: Bank },
@@ -112,37 +135,11 @@ export const routes = [
     { name: 'Volunteer',                      path: '/Volunteer',                     component: Volunteer },
     //===========================Account Holder finish================================================
 
-    { name: 'Users',                          path: '/Users',                         component: Hello },
-    { name: 'User-Privilige',                 path: '/User-Privilige',                component: Hello },
-    { name: 'User-Info',                      path: '/User-Info',                     component: Hello },
-    { name: 'Company-Info',                   path: '/Company-Info',                  component: Hello },
-    { name: 'Countries',                      path: '/Countries',                     component: Hello },
-    { name: 'Proviences',                     path: '/Proviences',                    component: Hello },
-    { name: 'ServicePlans',                   path: '/ServicePlans',                  component: Hello },
-    { name: 'Account-Floor',                  path: '/Account-Floor',                 component: Hello },
-    { name: 'Account-Suites',                 path: '/Account-Suites',                component: Hello },
-    { name: 'Account-Maintenance-Room',       path: '/Account-Maintenance-Room',      component: Hello },
-    { name: 'Account-Parking',                path: '/Account-Parking',               component: Hello },
-    { name: 'Account-Lockers',                path: '/Account-Lockers',               component: Hello },
-    { name: 'FireExtinguisher-Locations',     path: '/FireExtinguisher-Locations',    component: Hello },
-    { name: 'TowerInspection-Checklist',      path: '/TowerInspection-Checklist',     component: Hello },
-    { name: 'Account-Sprinkler',              path: '/Account-Sprinkler',             component: Hello },
-    { name: 'Account-Breakers',               path: '/Account-Breakers',              component: Hello },
-    { name: 'Account-EmergencyExits',         path: '/Account-EmergencyExits',        component: Hello },
-    { name: 'EmergencyWater-ShutDown',        path: '/EmergencyWater-ShutDown',       component: Hello },
-    { name: 'Account-ServicesContractors',    path: '/Account-ServicesContractors',   component: Hello },
-    { name: 'Account-FirePanel',              path: '/Account-FirePanel',             component: Hello },
-    { name: 'Account-GymEquipments',          path: '/Account-GymEquipments',         component: Hello },
-    { name: 'Account-SwimmingPool ',          path: '/Account-SwimmingPool ',         component: Hello },
-    { name: 'Account-Compactor ',             path: '/Account-Compactor ',            component: Hello },
-    { name: 'Account-Elevator',               path: '/Account-Elevator',              component: Hello },
-    { name: 'Account-AED',                    path: '/Account-AED',                   component: Hello },
-    { name: 'Account-SecurityCamera ',        path: '/Account-SecurityCamera ',       component: Hello },
-    { name: 'Account-FOB',                    path: '/Account-FOB',                   component: Hello },
-    { name: 'Account-ScheduledInspection',    path: '/Account-ScheduledInspection',   component: Hello },
-    { name: 'Account-ScheduledServices',      path: '/Account-ScheduledServices',     component: Hello },
-    { name: 'Account-SafeBox',                path: '/Account-SafeBox',               component: Hello },
-    { name: 'Account-PhoneCable',             path: '/Account-PhoneCable',            component: Hello },
-    { name: 'General-Info',                   path: '/General-Info',                  component: Hello },
-    { name: 'Account-period',                 path: '/Account-period',                component: AccountPeriod }
+    { name: 'Users',                          path: '/Users',                         component: Users },
+    { name: 'User-Privilige',                 path: '/User-Privilige',                component: UserPrivilige },
+    { name: 'User-Info',                      path: '/User-Info',                     component: UserProfile },
+    { name: 'Company-Info',                   path: '/Company-Info',                  component: CompanyInfo },
+    { name: 'Countries',                      path: '/Countries',                     component: Countries },
+    { name: 'Proviences',                     path: '/Proviences',                    component: Proviences },
+    { name: 'ServicePlans',                   path: '/ServicePlans',                  component: ServicePlans }
 ];

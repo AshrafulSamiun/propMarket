@@ -13,10 +13,8 @@
           <div class="pull-right">
             <button class="btn btn-primary btn-sm" @click.prevent="addModule()">Create New Module</button>
           </div>
-
         </div>
         <div class="card-body">
-          <vue-progress-bar></vue-progress-bar>
           <table id="tbl_main_module" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
             <tr>
@@ -210,7 +208,7 @@ export default {
             this.fetchModules();
           })
           .catch(() => {
-            Swal("failed!", "there was some wrong", "warning");
+            showAlert("failed!", "there was some wrong", "warning");
 
           });
     },
@@ -242,7 +240,7 @@ export default {
         this.form.delete('/Modules/' + id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your file has been deleted.',
                 'success'
@@ -251,7 +249,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })

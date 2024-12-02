@@ -124,23 +124,23 @@ class ProcedureInstructionController extends Controller
      */
     public function edit($id)
     {
-        $user=\Auth::user();
-        
-        $project_id                 = $user->project_id;
-        $ArrayFunction              =new ArrayFunction();
-        $rules_policy_arr           =$ArrayFunction->rules_policy_arr;
+        $user = \Auth::user();
 
-        $data['rules_policy_arr']=$rules_policy_arr;
+        $project_id = $user->project_id;
+        $ArrayFunction = new ArrayFunction();
+        $rules_policy_arr = $ArrayFunction->rules_policy_arr;
+
+        $data['rules_policy_arr'] = $rules_policy_arr;
 
 
-        $procedure_instruction_data=ProcedureInstruction::where('status_active',1)
-                                    ->where('id',$id)
-                                    ->get();
-
-        $data['prepared_by']        =$procedure_instruction_data[0]->user->name;
-        $data['updated_at']         =date("D M ,Y g:i a",strtotime($procedure_instruction_data[0]->updated_at));
-        $data['created_at']         =date("D M ,Y g:i a",strtotime($procedure_instruction_data[0]->created_at));
-        //dd( $data['prepared_by']);
+        $procedure_instruction_data = ProcedureInstruction::where('status_active', 1)
+            ->where('id', $id)
+            ->get();
+        if (count($procedure_instruction_data) > 0) {
+            $data['prepared_by'] = $procedure_instruction_data[0]?->user?->name;
+            $data['updated_at'] = date("D M ,Y g:i a", strtotime($procedure_instruction_data[0]?->updated_at));
+            $data['created_at'] = date("D M ,Y g:i a", strtotime($procedure_instruction_data[0]?->created_at));
+        }
         $data['procedure_instruction_data']  =$procedure_instruction_data;
 
         return $data;

@@ -1,5 +1,5 @@
 {
-    "name": "BMS",
+    "name": "bms",
     "lockfileVersion": 3,
     "requires": true,
     "packages": {
@@ -9,7 +9,7 @@
                 "@vitejs/plugin-vue": "^5.1.4",
                 "bootstrap-sass": "^3.4.3",
                 "cross-env": "^7.0.3",
-                "jquery": "^3.5.1",
+                "jquery": "^3.7.1",
                 "jspdf": "^2.5.2",
                 "lodash": "^4.17.21",
                 "sweetalert2": "^11.6.13",
@@ -1130,9 +1130,9 @@
             "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
         },
         "node_modules/jquery": {
-            "version": "3.5.1",
-            "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.5.1.tgz",
-            "integrity": "sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg=="
+            "version": "3.7.1",
+            "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz",
+            "integrity": "sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg=="
         },
         "node_modules/jspdf": {
             "version": "2.5.2",

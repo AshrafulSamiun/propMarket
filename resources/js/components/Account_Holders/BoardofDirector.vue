@@ -1,6 +1,4 @@
 <template>
-
-
   <div class="card">
     <form id="msform" @submit.prevent="editmode ? updateAccountHolder() : createAccountHolder()"
           @keydown="form.onKeydown($event)">
@@ -18,11 +16,10 @@
             </div>
           </div>
           <div v-if="list_showable" class="form-card">
-            <div class="pull-left" style="margin-top:50px;">
-              <label for="filter" class="sr-only">Filter</label>
-              <input type="text" class="form-control" v-model="filter" placeholder="Filter" style="width:400px;">
+            <div class="mb-2">
+              <input type="text" v-model="filter" class="form-control" placeholder="Search..." style="width:400px;"/>
             </div>
-            <vue3-datatable :rows="rows" :columns="columns" :sortable="true" class="advanced-table whitespace-nowrap">
+            <vue3-datatable :rows="rows" :columns="columns" :sortable="true" :search="filter" class="advanced-table whitespace-nowrap">
               <template #sl="data">
                 <strong class="text-info">{{ data.value.sl }}</strong>
               </template>
@@ -481,11 +478,11 @@ export default {
           showToast("Please open the 'Open File' page and select a company before proceeding to create an account holder User.", 'error');
         } else {
 
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       })
           .catch(() => {
-            Swal("failed!", "there was some wrong", "warning");
+            showAlert("failed!", "there was some wrong", "warning");
 
           });
     },
@@ -524,7 +521,7 @@ export default {
           showToast("Please open the 'Open File' page and select a company before proceeding to create an account holder User.", 'error');
         } else {
 
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
 
       })
@@ -544,7 +541,7 @@ export default {
         this.form.delete('/AccountHolderBoardOfDirector/' + this.form.id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your Company has been deleted.',
                 'success'
@@ -554,7 +551,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })

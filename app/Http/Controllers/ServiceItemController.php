@@ -47,6 +47,8 @@ class ServiceItemController extends Controller
 
         $ArrayFunction              =new ArrayFunction();
         $accounts_sub_group         =$ArrayFunction->accounts_sub_group;
+        $item_category              =$ArrayFunction->item_category;
+        $unit_of_measurement        =$ArrayFunction->unit_of_measurement;
         
         $sales_tax_arr=array();
         $purchase_tax_arr=array();

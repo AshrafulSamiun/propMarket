@@ -1,8 +1,6 @@
 <template>
-
   <fieldset>
-    <form id="msform" @submit.prevent="editmode ? updateParkingLot() : createCompanyProfile()"
-          @keydown="form.onKeydown($event)">
+    <form id="msform" @submit.prevent="editmode ? updateParkingLot() : createCompanyProfile()" @keydown="form.onKeydown($event)">
       <div class="form-card">
         <h1 class="page-head">Property Attribution</h1>
         <div class="text-center">
@@ -17,11 +15,10 @@
           </button>
         </div>
         <div v-if="list_showable" class="card-body">
-          <div class="pull-left" style="margin-top:50px;">
-            <label for="filter" class="sr-only">Filter</label>
-            <input type="text" class="form-control" v-model="filter" placeholder="Filter" style="width:400px;">
+          <div class="mb-2">
+            <input type="text" v-model="filter" class="form-control" placeholder="Search..." style="width:400px;"/>
           </div>
-          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" class="advanced-table whitespace-nowrap">
+          <vue3-datatable :rows="rows" :columns="columns" :sortable="true" :search="filter" class="advanced-table whitespace-nowrap">
             <template #sl="data">
               <strong class="text-info">{{ data.value.sl }}</strong>
             </template>
@@ -1843,7 +1840,7 @@ export default {
             item.available = item.available_actual - item.allocated_size * 1;
           } else {
 
-            Swal("failed!", "Allocated Size Must be Less than or Equal to Available Size.", "warning");
+            showAlert("failed!", "Allocated Size Must be Less than or Equal to Available Size.", "warning");
             self.form.total_common_area = self.form.total_common_area - item.previous_allocated * 1 + item.actual_allocated * 1;
             item.previous_allocated = item.actual_allocated * 1;
             item.available = item.available_actual * 1;
@@ -1889,7 +1886,7 @@ export default {
             item.previous_allocated = item.actual_allocated + item.allocated_size * 1;
             item.available = item.available_actual - item.allocated_size * 1;
           } else {
-            Swal("failed!", "Allocated Size Must be Less than or Equal to Available Size.", "warning");
+            showAlert("failed!", "Allocated Size Must be Less than or Equal to Available Size.", "warning");
             self.form.total_supporting_area = self.form.total_supporting_area - item.previous_allocated * 1 + item.actual_allocated * 1;
             item.previous_allocated = item.actual_allocated * 1;
             item.available = item.available_actual * 1;
@@ -2065,7 +2062,7 @@ export default {
         this.form.delete('/PropertyAttributions/' + id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your Data has been deleted.',
                 'success'
@@ -2075,7 +2072,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })
@@ -2097,7 +2094,7 @@ export default {
         this.form.delete('/PropertyAttributions/' + this.form.id).then(() => {
 
           if (result.value) {
-            Swal(
+            showAlert(
                 'Deleted!',
                 'Your Data has been deleted.',
                 'success'
@@ -2107,7 +2104,7 @@ export default {
           }
 
         }).catch(() => {
-          Swal("failed!", "there was some wrong", "warning");
+          showAlert("failed!", "there was some wrong", "warning");
         });
 
       })
@@ -2128,7 +2125,7 @@ export default {
 
         } else {
 
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       });
     },
@@ -2153,7 +2150,7 @@ export default {
           }
         } else {
 
-          showToast('Invalid Operation', 'danger');
+          showToast('Invalid Operation', 'error');
         }
       })
     },

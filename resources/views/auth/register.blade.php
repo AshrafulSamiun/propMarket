@@ -105,8 +105,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-block fxt-btn-fill" >
-                                   Continue/ Sign Up <span style="color:#9ef0e5">(Step 01 of 05)<span>
+                                <button type="submit" class="btn btn-block fxt-btn-fill">
+                                    Continue/ Sign Up <span style="color:#9ef0e5">(Step 01 of 05)</span>
                                 </button>
                             </div>
                         </form>
@@ -162,10 +162,6 @@
             
         });
     });
-
-    
-
-
 </script>
 
 </body>

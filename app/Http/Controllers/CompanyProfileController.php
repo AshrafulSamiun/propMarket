@@ -376,7 +376,7 @@ class CompanyProfileController extends Controller
         }
 
         // =======================================key position data=================================================
-        $key_position_lavel=KeyPositionLevel::where('status_active',1)
+        $key_position_lavel= KeyPositionLavel::where('status_active',1)
                                     ->where('page_id',1)
                                     ->get();
         $data["key_position_data_arr"]=array();

@@ -624,39 +624,21 @@
                     </div>
                 </div>
             </section>
-
         </div>
-
-
     </div>
-
-
 </div>
 <!-----------------Full Body Area End------------------>
 
 <!------------Scripts-------------->
-@vite('resources/js/app.js')
-<!--<script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/jquery.min.js') }}"></script>-->
 <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
-
 <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script1.> -->
-<!-- <script type="text/javascript" src="js/step.js"></script> -->
-
-<!-- <script src="js/evo-calendar.js"></script> -->
-
-
+@vite('resources/js/app.js')
 <script>
     //after window is loaded completely 
     window.onload = function () {
         //hide the preloader
         document.querySelector(".preloader").style.display = "none";
     }
-
-
 </script>
-
-
 </body>
 </html>
