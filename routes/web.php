@@ -32,11 +32,21 @@ Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::get('user/activation/{user_id}', 'Auth\RegisterController@userActivation');
 
-Route:: get ('/', function () {
-   return view('web_index');
-   // return view('auth.login');
-});
 
+
+Route:: get ('/', function () {
+	return view('web_index');
+	// return view('auth.login');
+ });
+ Route:: get ('/about-us', function () {
+	return view('about_us');
+ });
+ Route::get('/', 'HomeRouteController@home_menu');
+ Route::get('/about-us', 'HomeRouteController@about_us')->name('about-us');
+ Route::get('/plan', 'HomeRouteController@plan')->name('plan');
+ Route::get('/contact-us', 'HomeRouteController@contact_us')->name('contact-us');
+
+  
 
 Route:: get ('/multiform', function () {
    return view('multiform');

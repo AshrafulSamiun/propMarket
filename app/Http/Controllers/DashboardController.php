@@ -112,63 +112,65 @@ class DashboardController extends Controller
             // die;
 
 
+            // $data['module']=Module::where('status', '=', 1)->orderBy('modSlNo')->get();
+            // $data['menu']=DB::table('menus as menu')
+            //                 ->join('user_privileges as user_priv','menu.id','=','user_priv.main_menu_id')
+            //                 ->where('user_priv.user_id', '=', $user->id)
+            //                 ->where('user_priv.status_active', '=', 1)
+            //                 ->where('user_priv.is_deleted', '=', 0)
+            //                 ->where('menu.status', '=', 1)
+            //                 ->where('user_priv.show_priv', '=', 1)
+            //                 ->select('menu.*')
+            //                 ->orderBy('slno','ASC')
+            //                 ->get();
+
+
             $data['module']=Module::where('status', '=', 1)->orderBy('modSlNo')->get();
             $data['menu']=DB::table('menus as menu')
-                            ->join('user_privileges as user_priv','menu.id','=','user_priv.main_menu_id')
+                            ->join('user_privileges as user_priv', function($join)
+                             {
+                                 $join->on('menu.id','=','user_priv.main_menu_id');
+                                 $join->on('menu.moduleId','=','user_priv.module_id');
+                                
+                             })
                             ->where('user_priv.user_id', '=', $user->id)
                             ->where('user_priv.status_active', '=', 1)
                             ->where('user_priv.is_deleted', '=', 0)
-                            ->where('menu.status', '=', 1)
-                            ->where('user_priv.show_priv', '=', 1)
+                            ->where('menu.status', '=', 1) 
                             ->select('menu.*')
                             ->orderBy('slno','ASC')
                             ->get();
+                            
+                            
                             
             //$data['menu']=Menu::where('status', '=', 1)->orderBy('slno')->get();
             $main_menu_arr=array();
             $lavel_one_arr=array();
             $lavel_two_arr=array();
+            $lavel_three_arr=array();
             foreach ($data['menu'] as $key => $value) {
                 if($value->position==2)
                 {
-                   // $lavel_one_arr[$value->rootMenu][$value->id]['id']=$value->id;
                     $lavel_one_arr[$value->rootMenu][$value->id]['menuName']=$value->menuName;
                     $lavel_one_arr[$value->rootMenu][$value->id]['menuRoute']=$value->menuRoute;
                 }
                 else if($value->position==3)
                 {
-                   // $lavel_two_arr[$value->rootMenu]['id']=$value->id;
                     $lavel_two_arr[$value->rootMenu][$value->id]['menuName']=$value->menuName;
                     $lavel_two_arr[$value->rootMenu][$value->id]['menuRoute']=$value->menuRoute;
+                }
+                else if($value->position==4)
+                {
+                    $lavel_three_arr[$value->rootMenu][$value->id]['menuName']=$value->menuName;
+                    $lavel_three_arr[$value->rootMenu][$value->id]['menuRoute']=$value->menuRoute;
                 }
                 
                
             }
-            $data['lavel_one_arr']=$lavel_one_arr;
-            $data['lavel_two_arr']=$lavel_two_arr;
-            //dd($data['menu']);
-            /*$data['line'] = Charts::create('bar', 'highcharts')
-                ->title('Financial Year 2022')
-                ->elementLabel('Value in M')
-                ->labels(['Owner Equity', 'Liabilities', 'Assets','Revinue', 'COGS', 'Expenses'])
-                ->values([25,10,20,25,15,30]);
-               
-
-            $data['chart']= Charts::multi('bar', 'highcharts')
-                ->title('Financial Comparison 2018-2021')
-                ->colors(['#ff6666', '#ffd699', '#4d94ff', '#669999'])
-                ->labels(['2018', '2019', '2020', '2021'])
-                ->dataset('Assets', [30000.00, 200000.00, 30000.00, 50000.00])
-                ->dataset('Liabilities', [30000.00, 400000.00, 30000.00, 50000.00])
-                ->dataset('Owner Capital',  [40000.00, 30000.00, 40000.00, 60000.00]);
-            $data['donut'] = Charts::create('donut', 'highcharts')
-                ->title('Total Assets')
-                ->labels(['Current', 'Non-Current', 'Fixed'])
-                ->values([25,15,20])
-                ->dimensions(500,500)
-                ->responsive(false);*/
-        //return view('chart',compact('chart')); 
-          //  dd($data['lavel_one_arr'][1]);
+            $data['lavel_one_arr']      =$lavel_one_arr;
+            $data['lavel_two_arr']      =$lavel_two_arr;
+            $data['lavel_three_arr']    =$lavel_three_arr;
+             
             return view('dashboard',$data);
         } 
         

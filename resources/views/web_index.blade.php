@@ -1,567 +1,102 @@
 
 @extends('layouts.appWebsite')
-@section('title', 'NORTHSTAR- Property Management Technologies')
+@section('title', 'Prop Market')
 @section('content')
+    <!-- ======= Hero Section ======= -->
  
-    
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100" style="padding-top: 120px;"> 
+           
+          <div class="welcome-to-prop-container">
+            <span>Welcome to</span>
+            <span class="prop-market"> Prop Market</span>
+          </div> 
+          <div class="find-yours-browse">Find yours: Browse, Contact, and Secure Your Dream Home</div> 
+           
+          
+          <div class="rectangle-parent">
+              <div class="instance-child">
+              </div>
+              <div class="instance-item">
+              </div>
+              <div class="instance-inner">
+              </div>
+              <div class="rectangle-div">
+              </div>
+              <div class="buy">Buy</div>
+              <div class="sale">Sale</div>
+              <div class="rent">Rent</div>
+              <div class="bay-street-corridor">Bay Street Corridor, Toronto, ON</div>
+              <div class="rectangle-group">
+              <div class="group-child">
+              </div>
+              <img class="iconamoonsearch" alt="" src="assets/img/Home/iconamoon_search.svg">
+              </div>
           </div>
+           <div> 
+           <img class="group-icon" alt="" src="assets/img/Home/Group_34.svg"> 
+           </div>
+          
+          
+    </div> 
+  </section><!-- End Hero -->
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Featured Services Section -->
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
+     <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg" style="padding:15px 0;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <h3>Find Out More <span>About Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p style="text-align: justify;">At Prop Market, we revolutionize the way you buy, sell, and manage properties. As a leading technology service provider in the property market, we offer cutting-edge solutions to streamline your real estate transactions and enhance your property management experience.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li>
-                <i class="bx bx-store-alt"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bx bx-images"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
+        <div class="row ">
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <h3>Check our <span>Services</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <h3>Check our <span>Portfolio</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <h3>Our Hardworking <span>Team</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"  >
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                <img src="assets/img/Home/propmarket_70.jpg" class="img-fluid" alt="">
+                <div class="overlay"></div>
+                <div class="text">Property management</div>
               </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
+              
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                <img src="assets/img/Home/propmarket_67.jpg" class="img-fluid" alt="">
+                <div class="overlay"></div>
+                <div class="text">Property Sole Owner</div>
               </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
+              
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300" >
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                <img src="assets/img/Home/propmarket_68.jpg" class="img-fluid" alt="">
+                <div class="overlay"></div>
+                <div class="text">Strat Management</div>
               </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
+              
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
+                <img src="assets/img/Home/propmarket_69.jpg" class="img-fluid" alt="">
+                <div class="overlay"></div>
+                <div class="text">Smart Analytics</div>
               </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
+              
             </div>
           </div>
 
@@ -570,241 +105,710 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= About Section ======= -->
+    <section id="" class=" section-bg" style="padding:10px 0;">
+      <div class="container" data-aos="fade-up" style=""> 
+        <div class="row"> 
+           <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="recently-viewed-listings">Recently Viewed Listings</div> 
+              <div class="rectangle-div-list"></div> &nbsp;&nbsp;&nbsp;&nbsp;
 
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <h3>Check our <span>Pricing</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <div class="component-14">
+              <div class="component-2">
+                  <div class="component-2-child">
+                  </div>
+                  <div class="component-2-inner">
+                      <div class="frame-child">
+                      </div>
+                  </div>
+                  <div class="frame-div">
+                      <img class="frame-item" alt="" src="assets/img/Home/Rectangle 144.png">
+                      
+                  </div>
+                  <div class="residential-wrapper">
+                      <b class="residential">Residential</b>
+                  </div>
+                  <div class="detached-homes-and-townhouses-wrapper">
+                      <div class="detached-homes-and">Detached Homes and Townhouses in GTA Region ON, Toronto, ON</div>
+                  </div>
+                  <div class="cad-wrapper">
+                      <div class="cad">$500,800 CAD</div>
+                  </div>
+                  <div class="bed-3-bath-wrapper">
+                      <div class="bed-3-bath">3 Bed     3 Bath</div>
+                  </div>
+              </div>
+              <div class="component-3">
+                  <div class="component-3-child">
+                  </div>
+                  <div class="component-3-item">
+                  </div>
+                  <div class="component-3-inner">
+                      <img class="frame-item" alt="" src="assets/img/Home/Rectangle 144.png">
+                      
+                  </div>
+                  <div class="residential-container">
+                      <b class="residential">Residential</b>
+                  </div>
+                  <div class="detached-homes-and-townhouses-container">
+                      <div class="detached-homes-and1">Detached Homes and Townhouses in GTA Region ON, Toronto, ON</div>
+                  </div>
+                  <div class="cad-container">
+                      <div class="cad">$500,900 CAD</div>
+                  </div>
+                  <div class="component-3-inner1">
+                      <div class="bed-3-bath-container">
+                          <div class="bed-3-bath">3 Bed    3 Bath</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="component-4">
+                  <div class="component-4-child">
+                  </div>
+                  <div class="component-4-item">
+                  </div>
+                  <div class="component-4-inner">
+                      <img class="frame-item" alt="" src="assets/img/Home/Rectangle 102.png">
+                      
+                  </div>
+                  <div class="frame-parent">
+                      <div class="residential-parent">
+                          <b class="residential2">Residential</b>
+                          <div class="mila-towns-midland">Q Condos 200 Queens Quay West, Toronto, ON, Canada M5J 2Y5</div>
+                          <div class="cad2">$800,000 CAD</div>
+                      </div>
+                      <div class="bed-3-bath-frame">
+                          <div class="bed-3-bath">3 Bed   3 Bath</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="component-1">
+                  <div class="component-1-child">
+                  </div>
+                  <div class="component-1-item">
+                  </div>
+                  <img class="component-1-inner" alt="" src="assets/img/Home/Rectangle 103.png">
+                  
+                  <div class="component-1-child">
+                  </div>
+                  <div class="frame-group">
+                      <div class="residential-parent">
+                          <b class="residential2">Residential</b>
+                          <div class="mila-towns-midland">Mila Towns Midland Ave & Lawrence Ave E Toronto, ON M1K 4E7</div>
+                          <div class="cad2">$700,500 CAD</div>
+                      </div>
+                      <div class="bed-3-bath-frame">
+                          <div class="bed-3-bath">4 Bed       4 Bath</div>
+                      </div>
+                  </div>
+              </div>
+            </div>   
+          </div>
+        </div> 
+      </div>
+    </section><!-- End About Section -->
+
+
+     <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recently-viewed-listings">Popular Cities in Canada</div> 
+                        <div class="rectangle-div-list"></div>&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <div class="instance-parent">
+                      <div class="edmonton-city-wrapper">
+                          <b class="edmonton-city"> </b>
+                      </div>
+                      <div class="hamilton-city-wrapper">
+                          <b class="edmonton-city"> </b>
+                      </div>
+                      <div class="mississauga-city-wrapper">
+                          <b class="edmonton-city"></b>
+                      </div>
+                      <div class="component-5">
+                          <img class="component-5-child" alt="" src="assets/img/GettyImages-1386193357.jpg"> 
+                          <div class="component-5-item">
+                          </div>
+                          <b class="montana-city">Montana City</b>
+                      </div>
+                      <div class="ottawa-city-wrapper">
+                          <b class="edmonton-city"></b>
+                      </div>
+                      <div class="toronto-city-wrapper">
+                          <b class="edmonton-city"></b>
+                      </div>
+                      <div class="vancouver-city-wrapper">
+                          <b class="edmonton-city"></b>
+                      </div>
+                      <div class="windsor-city-wrapper">
+                          <b class="edmonton-city"></b>
+                      </div>
+                    </div> 
+             </div>
+          </div> 
         </div>
+    </section><!-- End About Section -->
 
+    
+    <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recently-viewed-listings">Popular Cities in Canada</div> 
+                        <div class="rectangle-div-list"></div>&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <div class="instance-parent2">
+                            <div class="barrie-houses-for-rent-wrapper">
+                                <b class="barrie-houses-for"></b>
+                            </div>
+                            <div class="barrie-houses-for-rent-container">
+                                <b class="barrie-houses-for"> </b>
+                            </div>
+                            <div class="barrie-houses-for-rent-frame">
+                                <b class="barrie-houses-for"> </b>
+                            </div>
+                            <div class="frame-wrapper">
+                                <div class="frame-div">
+                                    <b class="barrie-houses-for"></b>
+                                </div>
+                            </div>
+                            <div class="barrie-houses-for-rent-wrapper1">
+                                <b class="barrie-houses-for"></b>
+                            </div>
+                            <div class="barrie-houses-for-rent-wrapper2">
+                                <b class="barrie-houses-for"></b>
+                            </div>
+                            <div class="barrie-houses-for-rent-wrapper3">
+                                <b class="barrie-houses-for"></b>
+                            </div>
+                            <div class="barrie-houses-for-rent-wrapper4">
+                                <b class="barrie-houses-for"></b>
+                            </div>
+                        </div> 
+             </div>
+          </div> 
+        </div>
+    </section><!-- End About Section -->
+
+
+    <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="frame-parent2">
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="frame-child2">
+    		</div>
+    		<b class="alex-house-for">Alex House for Rent</b>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="ellipse-parent">
+      			<div class="frame-child2">
+      			</div>
+      			<b class="alex-house-for">Alex House for Rent</b>
+    		</div>
+    		<div class="view-more-parent">
+      			<b class="alex-house-for">View More</b>
+      			<img class="riarrow-down-s-line-icon" alt="" src="assets/img/ri_arrow-down-s-line.svg">
+      			
+    		</div>
+  	  </div>  
+             </div>
+          </div> 
+        </div>
+    </section><!-- End About Section --> 
+    
+    
+    <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="recently-viewed-listings">Popular Job Posts</div> 
+                        <div class="rectangle-div-list"></div>&nbsp;&nbsp;&nbsp;&nbsp; 
+
+                        <div class="instance-parent44">
+                              <div class="frame-parent-44">
+                                  <div class="hr-parent">
+                                      <div class="hr">$30/hr</div>
+                                      <img class="frame-child-12" alt="" src="assets/img/Rectangle 139.svg">
+                                      
+                                      <div class="senior-accountant">
+                                          <p class="senior">Senior </p>
+                                          <p class="senior">Accountant</p>
+                                      </div>
+                                      <div class="position-1">Position 1</div>
+                                      <img class="mynauiarrow-right-icon" alt="" src="assets/img/mynaui_arrow-right.svg">
+                                      
+                                      <img class="frame-item-3" alt="" src="assets/img/Group 38.svg">
+                                      
+                                  </div>
+                                  <div class="arora-housing-parent">
+                                      <div class="arora-housing">Arora Housing </div>
+                                      <div class="view-wrapper">
+                                          <div class="arora-housing">View</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="frame-group-44">
+                                  <div class="hr-group">
+                                      <div class="hr">$30/hr</div>
+                                      <img class="frame-child-12" alt="" src="assets/img/Rectangle 139.svg">
+                                      
+                                      <div class="senior-accountant">
+                                          <p class="senior">Senior </p>
+                                          <p class="senior">Manager</p>
+                                      </div>
+                                      <div class="position-1">Position 1</div>
+                                      <img class="mynauiarrow-right-icon" alt="" src="assets/img/mynaui_arrow-right.svg">
+                                      
+                                      <img class="frame-item-3" alt="" src="assets/img/Group 38.svg">
+                                      
+                                  </div>
+                                  <div class="arora-housing-parent">
+                                      <div class="arora-housing">Arora Housing </div>
+                                      <div class="view-wrapper">
+                                          <div class="arora-housing">View</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="frame-container">
+                                  <div class="hr-container">
+                                      <div class="hr">$30/hr</div>
+                                      <img class="frame-child-12" alt="" src="assets/img/Rectangle 139.svg">
+                                      
+                                      <div class="senior-accountant">
+                                          <p class="senior">Senior </p>
+                                          <p class="senior">Accountant</p>
+                                      </div>
+                                      <div class="position-1">Position 1</div>
+                                      <img class="mynauiarrow-right-icon" alt="" src="assets/img/mynaui_arrow-right.svg">
+                                      
+                                      <img class="frame-item-3 alt="" src="assets/img/Group 38.svg">
+                                      
+                                  </div>
+                                  <div class="arora-housing-parent">
+                                      <div class="arora-housing">Arora Housing </div>
+                                      <div class="view-wrapper">
+                                          <div class="arora-housing">View</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="frame-div-44">
+                                  <div class="hr-parent1">
+                                      <div class="hr">$30/hr</div>
+                                      <img class="frame-child-12" alt="" src="assets/img/Rectangle 139.svg">
+                                      
+                                      <div class="senior-accountant">
+                                          <p class="senior">Senior </p>
+                                          <p class="senior">Accountant</p>
+                                      </div>
+                                      <div class="position-1">Position 1</div>
+                                      <img class="mynauiarrow-right-icon" alt="" src="assets/img/mynaui_arrow-right.svg">
+                                      
+                                      <img class="frame-item-3" alt="" src="assets/img/Group 38.svg">
+                                      
+                                  </div>
+                                  <div class="arora-housing-parent">
+                                      <div class="arora-housing">Arora Housing </div>
+                                      <div class="view-wrapper">
+                                          <div class="arora-housing">View</div>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                         
+             </div>
+          </div> 
+        </div>
+    </section><!-- End About Section --> 
+    
+    
+    
+    <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="frame-parent-01">
+    		<div class="frame-group-01">
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Senior Accountant Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Senior Accountant Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+      			<div class="ellipse-parent-01">
+        				<div class="frame-child-01">
+        				</div>
+        				<b class="senior-accountant-position-01">Security Guard Position</b>
+      			</div>
+    		</div>
+    		<div class="view-more-parent-01">
+      			<b class="senior-accountant-position-01">View More</b>
+      			<img class="riarrow-down-s-line-icon-01" alt="" src="assets/img/ri_arrow-down-s-line.svg">
+      			
+    		</div>
+  	    </div>
+                         
+             </div>
+          </div> 
+        </div>
+    </section><!-- End About Section -->
+    
+    
+    
+    <section id="" class=" section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style=""> 
+          <div class="row"> 
+            <div class="col-lg-12 pt-12 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="are-you-a-property-manager-parent">
+              <div class="are-you-a">Are you a property manager?</div>
+              <div class="managing-properties-can">Managing properties can be complex and demanding. At Prop Market, we understand the unique challenges you face and offer a suite of tools designed to simplify your work. Our platform streamlines property management tasks, allowing you to focus on providing excellent service to your tenants and maintaining your properties to the highest standards.</div>
+          </div>
+                         
+             </div>
+          </div> 
+        </div>
+    </section><!-- End About Section -->
+
+
+
+
+     <div class="container">
+        <div class="text-center my-4">
+          <!-- Icon and Plan Title -->
+          <div class="icon-and-title">
+          <img class="" alt="" src="assets/img/Group 13.png">
+        
+            <h2 style="font-size:larger;">Plan</h2>
+          </div>
+          
+          <h2>Business Plan</h2>
+          <div class="currency-toggle btn-group" role="group">
+            <button type="button" class="btn btn-outline-secondary">USD</button>
+            <button type="button" class="btn btn-outline-secondary">CAD</button>
+            <button type="button" class="btn btn-outline-secondary">EURO</button>
+          </div>
+        </div>
+    
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-3" style="padding-left: 0px;">
+        <div class="pricing-card">
+          <h4>Enterprise Pack</h4>
+          <p class="price">$316/month</p>
+          <p>All components included. For larger businesses needing customizations.</p>
+          <ul>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Unlimited project use</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Advanced dashboard</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Multivariate components</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Phone Support</li>
+          </ul>
+          <button class="btn btn-get-started">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3" style="padding-left: 0px;">
+        <div class="pricing-card">
+          <h4>Starter Pack</h4>
+          <p class="price">$12/month</p>
+          <p>All the basics for businesses that are just getting started.</p>
+          <ul>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Single project use</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Basic dashboard</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>All components included</li>
+          </ul>
+          <button class="btn btn-get-started">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3" style="padding-left: 0px;">
+        <div class="pricing-card">
+          <h4>Standard Pack</h4>
+          <p class="price">$84/month</p>
+          <p>Better for growing businesses that want more customers.</p>
+          <ul>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Unlimited project use</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Advanced dashboard</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>All components included</li>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+    <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+  </svg>
+</div>Advanced insight</li>
+          </ul>
+          <button class="btn btn-get-started">Get Started</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3" style="padding-left: 0px;">
+        <div class="pricing-card">
+          <h4>Enterprise Pack</h4>
+          <p class="price">$316/month</p>
+          <p>All components included. For larger businesses needing customizations.</p>
+          <ul>
+            <li><div class="d-flex align-items-center justify-content-center custom-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+        </svg>
+      </div>Unlimited project use</li>
+                  <li><div class="d-flex align-items-center justify-content-center custom-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+        </svg>
+      </div>Advanced dashboard</li>
+                  <li><div class="d-flex align-items-center justify-content-center custom-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+        </svg>
+      </div>Multivariate components</li>
+                  <li><div class="d-flex align-items-center justify-content-center custom-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path d="M10 15.172L4.828 10 3.414 11.414l6.586 6.586 12-12L19.172 4 10 15.172z" fill="white"/>
+        </svg>
+</div>Phone Support</li>
+          </ul>
+          <button class="btn btn-get-started">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+     <section id="pricing" class="pricing section-bg" style="padding:15px 0;">
+        <div class="container" data-aos="fade-up" style="">  
+          <!-- <div class="frame-parent4">
+            <div class="frame-group4">
+                <div class="frame-container2">
+                    <div class="rectangle-wrapper">
+                        <div class="frame-child3">
+                        </div>
+                    </div>
+                    <div class="plan3">Plan</div>
+                </div>
+                <div class="business-plan-wrapper">
+                    <div class="business-plan">Business Plan</div>
+                </div>
+            </div>
+            <div class="frame-div4">
+                <div class="usd-wrapper">
+                    <div class="business-plan">USD</div>
+                </div>
+                <div class="cad-wrapper2">
+                    <div class="business-plan">CAD</div>
+                </div>
+                <div class="euro-wrapper">
+                    <div class="business-plan">EURO</div>
+                </div>
+            </div>
+          </div>   -->
+ 
+           
+        </div>
+    </section><!-- End About Section -->
+ 
+
+
+   
+
+     <section id="" class="contact-us section-bg"> 
         <div class="row">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
+          <div class="col-lg-6 d-flex" data-aos="zoom-out" data-aos-delay="100" style="position: relative;">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/Rectangle 35.jpg" style="height: 750px;" class="img-fluid img_left" alt=""> 
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>F.A.Q</h2>
-          <h3>Frequently Asked <span>Questions</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
-
-          <li>
-            <a data-toggle="collapse" class="" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
-            <div id="faq1" class="collapse show" data-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
-            <div id="faq2" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
-            <div id="faq3" class="collapse" data-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
-            <div id="faq4" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
-            <div id="faq5" class="collapse" data-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <h3><span>Contact Us</span></h3>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
+              <div class=" contact-form" style="height: 667px;">
+                <div class="section-title" style="text-align:left; color:#fff">
+                  <div>
+                      <h2 style="border: 3px solid rgba(255,255,255, 1);color: rgba(48, 92, 202, 1);">
+                        <span style=" background: rgba(255,255,255,1);"></span>
+                      </h2>
+                      <span class="plan-title" style="color:#fff">Talk To Us </span>
+                  </div>
                 </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+                <h4>How may we help you! </h4> 
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class=" form-group">
+                    <label>Your Name*</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class=" form-group">
+                    <label>Email*</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Phone" data-rule="phone" data-msg="Please enter a valid Phone Number" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class=" form-group">
+                    <label>Phone*</label>
+                    <input type="email" class="form-control" name="phone" id="phone" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                     <label>Subject*</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                     <label>Message*</label>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  
+                  <div class="text-center"><button class="btn btn-secondary btn-lg btn-block" type="submit" style="background:#000 !important">Send Message</button></div>
+                </form>
 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="section-title" style="text-align:left;">
+              <div ><h2><span></span></h2><span class="plan-title">Contact </span></div>
+            </div>
+            <h3>Contact Us</h3>
+            <p class="font-italic" style=" text-align: justify; font-size: 1.5rem; ">
+            Ready to streamline your property management operations? Contact us today to discover how our innovative solutions can enhance your property management business. Our expert team is here to assist you with any questions and help you find the perfect solution for your needs.
+            </p>
+          </div>
         </div>
 
-      </div>
-    </section><!-- End Contact Section -->
-
-
-  
+    </section>  
 @endsection
 

@@ -6,263 +6,288 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>NORTHSTAR- Property Management Technologies</title>
-    <link href="{!! asset('images/logo.png') !!}" rel="icon">
+    <title>ARTEMIS SECURITIES</title>
+    <link href="{!! asset('assets/img/armitis_security.png') !!}" rel="icon">
 
     <!------------CSS-------------->
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{!! asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') !!}"
-          media="all" rel="stylesheet" type="text/css"/>
-    <!-- Ionicons -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="{!! asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') !!}" media="all" rel="stylesheet" type="text/css" />
+  <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ asset('css/glyphicon.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  />
+    <link href="css/glyphicon.css" rel="stylesheet">
 </head>
 
 <style type="text/css">
-    .clasic_view {
-        font-size: 16px;
-        color: #236EB2;
-        font-weight: bolder;
+    .clasic_view{
+      font-size:12px;
+      color:#236EB2;
+      font-weight: bolder;
     }
-
-    .soft_view {
-        font-size: 16px;
-        color: #C3CDC3;
-        font-weight: bolder;
+    .soft_view{
+       font-size:12px;
+        color:#C3CDC3;
+         font-weight: bolder;
     }
 
     .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 28px;
+      position: relative;
+      display: inline-block;
+      width: 37px;
+      height: 16px;
     }
 
-    .switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
 
     .btnonof {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
     }
 
     .btnonof:before {
-        position: absolute;
-        content: "";
-        height: 24px;
-        width: 24px;
-        left: 6px;
-        bottom: 2px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 6px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
     }
 
     input:checked + .btnonof {
-        background-color: #236EB2;
+      background-color: #236EB2;
     }
 
     input:focus + .btnonof {
-        box-shadow: 0 0 1px #236EB2;
+      box-shadow: 0 0 1px #236EB2;
     }
 
     input:checked + .btnonof:before {
-        -webkit-transform: translateX(24px);
-        -ms-transform: translateX(24px);
-        transform: translateX(24px);
+      -webkit-transform: translateX(14px);
+      -ms-transform: translateX(14px);
+      transform: translateX(14px);
     }
 
     /* Rounded btnonofs */
     .btnonof.round {
-        border-radius: 24px;
+      border-radius: 14px;
     }
 
     .btnonof.round:before {
-        border-radius: 50%;
+      border-radius: 50%;
     }
 
 
-    .tr_disable {
-        display: none;
+    .tr_disable{
+        display:none;
+      }
+    .tr_anable{
+        display:block;
     }
 
-    .tr_anable {
-        display: block;
+    .router-link{
+        cursor:pointer;
     }
 
-    .router-link {
-        cursor: pointer;
+    .sidebar__heading li a .router-link-active{
+      color:red !important;
     }
 
-    .sidebar__heading li a .router-link-active {
-        color: red !important;
-    }
+/*    .li_router_links*/
+  .router-link-active{
+     background-color:#fff !important;
+     color:rgba(0,0,0,.6) !important;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: left;
 
 
-    .li_router_links .router-link-active {
-        background-color: #2d8f12 !important;
-        color: #fff !important;
-    }
-
-    .cursor-pointer {
-        cursor: pointer;
-    }
+  }
 
 </style>
 <script type="text/javascript">
+    
+    function enable_softview_clasic_view()
+    {
 
-    function enable_softview_clasic_view() {
-
-        if ($("#switch_clasic_view").hasClass("clasic_view")) {
-            //alert(4);
-            $("#switch_clasic_view").removeClass("clasic_view");
-            $("#switch_clasic_view").addClass("soft_view");
-        } else {
-            //alert(3);
-            $("#switch_clasic_view").removeClass("soft_view");
-            $("#switch_clasic_view").addClass("clasic_view");
+        if($("#switch_clasic_view").hasClass("clasic_view"))
+        {
+          //alert(4);
+          $("#switch_clasic_view").removeClass("clasic_view");
+          $("#switch_clasic_view").addClass("soft_view");
+        }
+        else
+        {
+          //alert(3);
+          $("#switch_clasic_view").removeClass("soft_view");
+          $("#switch_clasic_view").addClass("clasic_view");
         }
         //return;
-        if ($("#switch_soft_view").hasClass("clasic_view")) {
-            //alert(2);
-            $("#switch_soft_view").removeClass("clasic_view");
-            $("#switch_soft_view").addClass("soft_view");
-        } else {
-            //alert(1);
-            $("#switch_soft_view").removeClass("soft_view");
-            $("#switch_soft_view").addClass("clasic_view");
+        if($("#switch_soft_view").hasClass("clasic_view"))
+        {
+          //alert(2);
+          $("#switch_soft_view").removeClass("clasic_view");
+          $("#switch_soft_view").addClass("soft_view");
+        }
+        else
+        {
+          //alert(1);
+          $("#switch_soft_view").removeClass("soft_view");
+          $("#switch_soft_view").addClass("clasic_view");
         }
 
-        if ($("#menu_display_type").val() == 1) {
+        if($("#menu_display_type").val()==1)
+        {
 
-            $(".second_level_div").each(function () {
-
+            $(".second_level_div").each(function(){
+               
                 $(this).css("display", "none");
 
             });
-            $(".third_level").each(function () {
-
-                $(this).css("display", "none");
-
-            });
-            $("#menu_display_type").val('0');
-
-            $(".app-sidebar__heading").children("ul").addClass('tr_disable');
-            $(".app-sidebar__heading a").children("i").css("display", "none");
-        } else {
-            $(".second_level_div").each(function () {
-
-                $(this).css("display", "none");
+             $(".third_level").each(function(){
+           
+               $(this).css("display", "none");
 
             });
-
-            $(".third_level").each(function () {
-
-                $(this).css("display", "none");
+          $("#menu_display_type").val('0');
+    
+          $(".app-sidebar__heading").children("ul").addClass('tr_disable');
+          $(".app-sidebar__heading a").children("i").css("display","none");
+        }
+        else
+        {
+             $(".second_level_div").each(function(){
+               
+                   $(this).css("display", "none");
 
             });
-            $("#menu_display_type").val('1');
-            $(".app-sidebar__heading").children("ul").removeClass('tr_disable');
-            $(".app-sidebar__heading a").children("i").css("display", "block");
+
+              $(".third_level").each(function(){
+           
+                   $(this).css("display", "none");
+
+            });
+          $("#menu_display_type").val('1');
+          $(".app-sidebar__heading").children("ul").removeClass('tr_disable');
+          $(".app-sidebar__heading a").children("i").css("display","block");
         }
     }
 
-    function enable_disable_menu() {
+    function enable_disable_menu()
+    {
 
-        if ($("#show_menu").hasClass("clasic_view")) {
-            //alert(4);
-            $("#show_menu").removeClass("clasic_view");
-            $("#show_menu").addClass("soft_view");
-        } else {
-            //alert(3);
-            $("#show_menu").removeClass("soft_view");
-            $("#show_menu").addClass("clasic_view");
+        if($("#show_menu").hasClass("clasic_view"))
+        {
+          //alert(4);
+          $("#show_menu").removeClass("clasic_view");
+          $("#show_menu").addClass("soft_view");
+        }
+        else
+        {
+          //alert(3);
+          $("#show_menu").removeClass("soft_view");
+          $("#show_menu").addClass("clasic_view");
         }
         //return;
-        if ($("#hide_menu").hasClass("clasic_view")) {
+        if($("#hide_menu").hasClass("clasic_view"))
+        {
 
-            $("#hide_menu").removeClass("clasic_view");
-            $("#hide_menu").addClass("soft_view");
-        } else {
-            $("#hide_menu").removeClass("soft_view");
-            $("#hide_menu").addClass("clasic_view");
+          $("#hide_menu").removeClass("clasic_view");
+          $("#hide_menu").addClass("soft_view");
+        }
+        else
+        {
+          $("#hide_menu").removeClass("soft_view");
+          $("#hide_menu").addClass("clasic_view");
         }
 
-        if ($("#menu_show_hide").val() == 1) {
+        if($("#menu_show_hide").val()==1)
+        {
 
-            $(".app-sidebar").css("display", "none");
+          $(".app-sidebar").css("display", "none");
 
-
-            $("#menu_show_hide").val('0');
-
-            $(".app-main__outer").css("padding-left", "0");
-        } else {
-            $(".app-sidebar").css("display", "block");
-            $("#menu_show_hide").val('1');
-            $(".app-main__outer").css("padding-left", "280px");
+          
+          $("#menu_show_hide").val('0');
+    
+          $(".app-main__outer").css("padding-left","0");
+        }
+        else
+        {
+          $(".app-sidebar").css("display", "block");
+          $("#menu_show_hide").val('1');
+          $(".app-main__outer").css("padding-left","280px");
         }
     }
 
 
-    function show_second_level(row_id) {
+    function show_second_level(row_id)
+    {
+       return;
 
-        $(".second_level_div").each(function () {
-
+        $(".second_level_div").each(function(){
+           
+              $(this).css("display", "none");
+        });
+        $(".third_level").each(function(){
+           
             $(this).css("display", "none");
         });
-        $(".third_level").each(function () {
+        
+        if($("#menu_display_type").val()==1) return;
 
-            $(this).css("display", "none");
-        });
-
-        if ($("#menu_display_type").val() == 1) return;
-
-        $("#selcond_level_" + row_id).css("display", "block");
-        $("#selcond_level_" + row_id).children("div").css("display", "block");
+        $("#selcond_level_"+row_id).css("display", "block");
+        $("#selcond_level_"+row_id).children("div").css("display", "block");
     }
 
-    function show_third_level(row_id) {
+    function show_third_level(row_id)
+    {
+        
 
-
-        $(".third_level").each(function () {
-
-            $(this).css("display", "none");
+         $(".third_level").each(function(){
+           
+               $(this).css("display", "none");
 
         });
-
-
-        $("#third_level_" + row_id).css("display", "block");
-        $("#third_level_" + row_id).children("div").css("display", "block");
+        
+    
+        $("#third_level_"+row_id).css("display", "block");
+        $("#third_level_"+row_id).children("div").css("display", "block");
     }
 
-    function tabdisplay(id) {
-        var tab_array = ["licence", "warranty", "permit", "insuarnce-policies", "fire-extinguishers"];
+    function tabdisplay(id){
+        var tab_array=["licence", "warranty", "permit","insuarnce-policies","fire-extinguishers"];
 
-        for (var i = 0; i <= 4; i++) {
+        for(var i=0;i<=4; i++)
+        {
 
-            if (tab_array[i] == id)
-                $("#" + tab_array[i]).css("display", "block");
-            else
-                $("#" + tab_array[i]).css("display", "none");
+            if(tab_array[i]==id)
+                $("#"+tab_array[i]).css("display","block");
+            else 
+                $("#"+tab_array[i]).css("display","none");
         }
-
+        
     }
 </script>
-<body>
+<body >
 
 <div id="preloader" class="preloader">
     <div class='inner'>
@@ -272,49 +297,45 @@
     </div>
 </div>
 
-<!-----------------Full Body Area Start------------------>
+<!-----------------Full Body Area Start------------------>   
 <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    
 
+  <!----------Header Area-------->  
+  <section class="app-header header-shadow">
+      <div class="app-header__logo">
+          <div class="logo-src">
+              <img src="assets/img/armitis_security.png" alt="" height="" width="40" style="vertical-align:top !important" />
+               
+                    @if(session()->has('company_name'))
+                       <b> {{session()->get('company_name')}} </b>
+                       <span> {{session()->get('site_name')}} </span>
+                    @else
 
-    <!----------Header Area-------->
-    <section class="app-header header-shadow">
-        <div class="app-header__logo">
-            <div class="logo-src">
-                <img src="images/logo.png" alt="" height="" width="40"/>
-                <b>{{$project_name}}</b>
-            </div>
-            <br/>
-            <div>
-                <label for="switch_menu" id="show_menu" class="clasic_view">Show Menu</label>
-                <label class="switch">
+                     <b> {{$project_name}}</b>
+                   @endif
+             
+          </div>
 
-                    <input type="checkbox" id="switch_clasic_view_soft_view"
-                           onclick="enable_disable_menu()"
-                           name="switch_clasic_view_soft_view" value="1" checked>
+           <div>
+              <label for="switch_menu" id="show_menu" class="clasic_view">Show Menu</label>
+              <label class="switch">
 
-                    <span class="btnonof round"></span>
-                </label>
-                <label for="switch_soft_view" id="hide_menu" class="soft_view">Hide Menu</label>
-                <input type="hidden" id="menu_show_hide" name="menu_show_hide" value="1">
+                  <input type="checkbox" id="switch_clasic_view_soft_view"
+                  onclick="enable_disable_menu()"
+                  name="switch_clasic_view_soft_view" value="1" checked>
 
-            </div>
-        </div>
-        <div>
-            <label for="switch_clasic_view" id="switch_clasic_view" class="clasic_view">Clasic View</label>
-            <label class="switch">
+                  <span class="btnonof round"></span>
+              </label>
+              <label for="switch_soft_view" id="hide_menu" class="soft_view">Hide Menu</label>
+              <input type="hidden" id="menu_show_hide" name="menu_show_hide" value="1" >
 
-                <input type="checkbox" id="switch_clasic_view_soft_view"
-                       onclick="enable_softview_clasic_view()"
-                       name="switch_clasic_view_soft_view" value="1" checked>
+          </div>
+           
+      </div>
+     
 
-                <span class="btnonof round"></span>
-            </label>
-            <label for="switch_soft_view" id="switch_soft_view" class="soft_view">Soft View</label>
-            <input type="hidden" id="menu_display_type" name="menu_display_type" value="1">
-
-        </div>
-
-        <div class="app-header__mobile-menu">
+      <div class="app-header__mobile-menu">
             <div>
                 <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
                   <span class="hamburger-box">
@@ -323,6 +344,8 @@
                 </button>
             </div>
         </div>
+       
+       
         <div class="app-header__menu">
           <span>
               <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
@@ -369,6 +392,8 @@
                         </a>
                     </li>
                 </ul>
+
+                
                 <div class="search-wrapper">
                     <div class="input-holder">
                         <input type="text" class="search-input" placeholder="Type to search">
@@ -418,216 +443,244 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div>   
+  </section>        
+         
+  <!----------Sidebar and Panel Area--------> 
+  <div class="app-main" id="app"> 
+      <!----------Sidebar-------->  
+       <section class="app-sidebar sidebar-shadow">
 
-    <!----------Sidebar and Panel Area-------->
-    <div class="app-main" id="app">
+         <div class="scrollbar-sidebar" style="overflow: scroll;">
 
-        <!----------Sidebar-------->
-
-        <section class="app-sidebar sidebar-shadow">
-
-            <div class="scrollbar-sidebar" style="overflow: scroll;">
-
-                <div class="app-sidebar__inner">
-
-                    <ul class="vertical-nav-menu">
-                        @foreach ($menu as $mid => $m_value)
-                            @if($m_value->rootMenu==0 && $m_value->position==1)
-                                <li class="app-sidebar__heading" id="first_level_{{$mid}}"
-                                    onClick="show_second_level({{$mid}})">
-                                    @if(!empty($lavel_one_arr[$m_value->id]))
-                                        <a class="text-capitalize" href="#">{{$m_value->menuName}}
-                                            <i class="metismenu-state-icon fa fa-angle-down"></i>
-                                        </a>
-                                    @else
-                                        <router-link :to="{ path: '/{{$m_value->menuRoute}}'}"
-                                                     class="router-link text-capitalize">
-                                            <p>{{ $m_value->menuName}}</p>
-                                        </router-link>
-                                    @endif
-
-                                    @if(!empty($lavel_one_arr[$m_value->id]))
-                                        <ul class="second_level">
-                                            @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
-                                                <li class="li_router_links">
-                                                    @if(!empty($lavel_two_arr[$l1_id]))
-                                                        <a class="text-capitalize" href="#">{{$la_value['menuName']}}
-                                                            <i class="metismenu-state-icon fa fa-angle-down"></i>
-                                                        </a>
-                                                        <ul>
-                                                            @foreach($lavel_two_arr[$l1_id] as $l2_id=>$lb_value)
-                                                                <li>
-                                                                    <router-link
-                                                                            :to="{ path: '/{{$lb_value["menuRoute"]}}'}"
-                                                                            class="router-link text-capitalize">
-                                                                        <p>{{ $lb_value['menuName']}}</p>
-                                                                    </router-link>
-                                                                </li>
-                                                            @endforeach
-                                                        </ul>
-                                                    @else
-                                                        <router-link :to="{ path: '/{{$la_value["menuRoute"]}}'}"
-                                                                     class="router-link text-capitalize">
-                                                            <p>{{ $la_value['menuName']}}</p>
-                                                        </router-link>
-                                                    @endif
-
-                                                </li>
-                                            @endforeach
-                                        </ul>
-
-                                    @endif
-
-
-                                </li>
-
-                            @endif
-
-                        @endforeach
-
-                    </ul>
-
-                </div>
-            </div>
-        </section>
-        <!----------Main Panel Area-------->
-        <div class="app-main__outer">
-
-            <section class="app-main__inner">
-
-
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="main-card mb-3 card "><!-- style="display: none" -->
-                            @if(session()->has('legal_name'))
-                                <div class="card-header" style="color:#2955C8;; font-size:20px">
-                                    Company Name:{{session()->get('legal_name')}} -- Account
-                                    No: {{session()->get('account_no')}}
-                                </div>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <!----------Page Title Area-------->
-
-                <div class="row">
-                    <div class="col-md-12 ">
-                        @foreach ($menu as $mid => $m_value)
-                            @if($m_value->rootMenu==0 && $m_value->position==1)
+            <div class="app-sidebar__inner"> 
+                <ul class="vertical-nav-menu">
+                    @foreach ($menu as $mid => $m_value)
+                        @if($m_value->rootMenu==0 && $m_value->position==1)
+                            <li class="app-sidebar__heading" id="first_level_{{$mid}}"
+                                onClick="show_second_level({{$mid}})">
                                 @if(!empty($lavel_one_arr[$m_value->id]))
-                                    <div class="main-card mb-3 card second_level_div" id="selcond_level_{{$mid}}"
-                                         style="display: none"><!-- style="display: none" -->
-                                        <div class="card-header">Second Lavel--{{$m_value->menuName}}</div>
-                                        <div class="table-responsive">
-                                            <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                    <a class="text-capitalize" href="#">{{$m_value->menuName}}
+                                        <i class="metismenu-state-icon fa fa-angle-down"></i>
+                                    </a>
+                                @else
+                                    <router-link :to="{ path: '/{{$m_value->menuRoute}}'}"
+                                                class="router-link text-capitalize">
+                                        <p>{{ $m_value->menuName}}</p>
+                                    </router-link>
+                                @endif
 
-                                                <tbody>
-                                                <tr>
-                                                        <?php $i = 1; ?>
-                                                    @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
-                                                        @if(!empty($lavel_two_arr[$l1_id]) )
-                                                            <td class="text-center text-muted"
-                                                                onClick="show_third_level({{$l1_id}})"
-                                                                style="cursor:pointer">
-                                                                {{$la_value['menuName']}}
-                                                            </td>
-                                                        @else
-                                                            <td class="text-center text-muted" style="cursor:pointer">
+                                @if(!empty($lavel_one_arr[$m_value->id]))
+                                    <ul class="second_level">
+                                        @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
+                                            <li class="li_router_links">
+                                                @if(!empty($lavel_two_arr[$l1_id]))
+                                                    <a class="text-capitalize" href="#">{{$la_value['menuName']}}
+                                                        <i class="metismenu-state-icon fa fa-angle-down"></i>
+                                                    </a>
+                                                    <ul>
+                                                        @foreach($lavel_two_arr[$l1_id] as $l2_id=>$lb_value)
+                                                            <li>
                                                                 <router-link
-                                                                        :to="{ path: '/{{$la_value["menuRoute"]}}'}"
-                                                                        class="router-link">
-                                                                    <p>{{ $la_value['menuName']}}</p>
+                                                                        :to="{ path: '/{{$lb_value["menuRoute"]}}'}"
+                                                                        class="router-link text-capitalize">
+                                                                    <p>{{ $lb_value['menuName']}}</p>
                                                                 </router-link>
-                                                            </td>
-                                                        @endif
-                                                        @if($i%6==0)
-                                                </tr>
-                                                <tr>
-                                                    @endif
-                                                        <?php $i++; ?>
-                                                    @endforeach
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                @else
+                                                    <router-link :to="{ path: '/{{$la_value["menuRoute"]}}'}"
+                                                                class="router-link text-capitalize">
+                                                        <p>{{ $la_value['menuName']}}</p>
+                                                    </router-link>
+                                                @endif
 
-                                                </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-
-                                    @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
-                                        @if(!empty($lavel_two_arr[$l1_id]) )
-                                            <div class="main-card mb-3 card third_level" id="third_level_{{$l1_id}}"
-                                                 style="display: none"><!-- style="display: none" -->
-                                                <div class="card-header">Third Lavel--{{$la_value['menuName']}}
-                                                    ---{{$l1_id}}</div>
-                                                <div class="table-responsive">
-                                                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
-                                                        <tbody>
-                                                        <tr>
-                                                                <?php $j = 1; ?>
-                                                            @foreach($lavel_two_arr[$l1_id] as $l2_id=>$lb_value)
-                                                                <td class="text-center text-muted">
-                                                                    <router-link
-                                                                            :to="{ path: '/{{$lb_value["menuRoute"]}}'}"
-                                                                            class="router-link">
-                                                                        <p>{{ $lb_value['menuName']}}</p>
-                                                                    </router-link>
-                                                                </td>
-                                                                @if($j%6==0)
-                                                        </tr>
-                                                        <tr>
-                                                            @endif
-                                                                <?php $j++; ?>
-                                                            @endforeach
-
-                                                        </tr>
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        @endif
-
-                                    @endforeach
+                                            </li>
+                                        @endforeach
+                                    </ul>
 
                                 @endif
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-                <div class="row" style="min-height:800px">
-                    <div class="col-md-12 col-xl-12">
-                        <router-view></router-view>
-
-                    </div>
-                </div>
 
 
-            </section>
+                            </li>
 
-            <!----------Footer Area-------->
-            <section class="app-wrapper-footer">
-                <div class="app-footer">
-                    <div class="app-footer__inner">
-                        <div class="app-footer-right">
-                            <ul class="nav">
-                                <li class="nav-item d-flex align-items-center">
-                                    Design and Developed By:
-                                    <a href="https://www.bms.com.ca" target="blank" class="nav-link">
-                                        BMS-Building Management System
-                                    </a>
-                                </li>
-                            </ul>
+                        @endif
+
+                    @endforeach
+
+                </ul>
+
+            </div>
+         </div>
+       </section> 
+      <!----------Main Panel Area--------> 
+      <div class="app-main__outer" >
+
+          <section class="app-main__inner" >
+           
+
+            <div class="row">
+                  <div class="col-md-12 " >
+                    <div class="main-card mb-3 card " style="display: none;" ><!-- style="display: none" -->
+                      @if(session()->has('legal_name'))
+                        <div class="card-header" style="color:#2955C8;; font-size:20px">
+                             Company Name:{{session()->get('legal_name')}} -- Account No: {{session()->get('account_no')}}
                         </div>
+                      @endif
                     </div>
-                </div>
-            </section>
-        </div>
-    </div>
+                  </div>
+            </div>
+              <!----------Page Title Area--------> 
+              
+              <div class="row">
+                  <div class="col-md-12 " >
+                      @foreach ($menu as $mid => $m_value)
+                          @if($m_value->rootMenu==0 && $m_value->position==1)
+                              @if(!empty($lavel_one_arr[$m_value->id]))
+                                  <div class="main-card mb-3 card second_level_div" id="selcond_level_{{$mid}}" style="display: none"><!-- style="display: none" -->
+                                      <div class="card-header">Second Lavel--{{$m_value->menuName}}</div>
+                                      <div class="table-responsive">
+                                          <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                             
+                                              <tbody>
+                                                  <tr>
+                                                  <?php $i=1; ?>
+                                                  @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
+                                                       @if(!empty($lavel_two_arr[$l1_id]) )
+                                                          <td class="text-center text-muted" onClick="show_third_level({{$l1_id}})" style="cursor:pointer" >
+                                                               {{$la_value['menuName']}}</td>
+                                                      @else
+
+                                                          <td class="text-center text-muted"  style="cursor:pointer" >
+                                                               
+                                                              <router-link :to="{ path: '/{{$la_value['menuRoute']}}', params: { id: 20 }}" class="router-link" >
+                                                      
+                                                              <p>{{ $la_value['menuName']}}</p>
+                                                              </router-link>
+                                                           </td>
+                                                      @endif
+                                                      @if($i%6==0)
+                                                          </tr>
+                                                          <tr>
+                                                      @endif
+                                                      <?php $i++; ?>
+                                                  @endforeach
+                                                  
+                                                  </tr>
+                                           
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                  </div>
+
+                                  @foreach($lavel_one_arr[$m_value->id] as $l1_id=>$la_value)
+                                      @if(!empty($lavel_two_arr[$l1_id]) )
+
+
+                                          <div class="main-card mb-3 card third_level" id="third_level_{{$l1_id}}" style="display: none"><!-- style="display: none" -->
+                                              <div class="card-header">Third Lavel--{{$la_value['menuName']}} ---{{$l1_id}}</div>
+                                              <div class="table-responsive">
+                                                  <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                                     
+                                                      <tbody>
+                                                          <tr>
+                                                          <?php $j=1; ?>
+                                                          @foreach($lavel_two_arr[$l1_id] as $l2_id=>$lb_value)
+                                                              <td class="text-center text-muted" >
+                                                                  <router-link :to="{ path: '/{{$lb_value['menuRoute']}}', params: { id: 20 }}" class="router-link" >
+                                                      
+                                                                  <p>{{ $lb_value['menuName']}}</p>
+                                                              </router-link>
+                                                              </td>
+                                                              @if($j%6==0)
+                                                                  </tr>
+                                                                  <tr>
+                                                              @endif
+                                                              <?php $j++; ?>
+                                                          @endforeach
+                                                          
+                                                          </tr>
+                                                   
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      @endif
+
+                                  @endforeach
+
+                              @endif
+                          @endif
+                      @endforeach
+                  </div>
+              </div> 
+              <div class="row"  style="min-height:800px">
+                  <div class="col-md-12 col-xl-12">
+                     <router-view v-if="$route.name">
+                       
+                      
+
+
+                     </router-view>
+                      <div class="row" v-else>
+                          <div class="col-md-12 " >
+                            <div class="main-card mb-3 card "  ><!-- style="display: none" -->
+                             
+                                <div class="card-header" style=" font-size:20px" align="center">
+                                     RISKS AND THREATENS LEVELS
+                                </div>
+                            
+                            </div>
+                          </div>
+                          <div class="main-card mb-3 text-center "  >
+                              <div class="btn-group" align="center">
+                                            
+                                  <button class="btn risk-thred-level normal" >Normal(55)</button>
+                                  <button class="btn risk-thred-level minimal">Minimal(212)</button>
+                                  <button class="btn risk-thred-level low" >Low(12) </button>
+                                  <button class="btn risk-thred-level medium" >Medium(45)</button>
+                                  <button class="btn risk-thred-level high" >High(12)</button>
+                                  <button class="btn risk-thred-level urgent" >Urgent(14)</button>
+                                 
+                              </div>
+                          </div>
+
+                    </div>
+
+                  </div>
+              </div>
+              
+             
+          </section>
+
+          <!----------Footer Area--------> 
+          <section class="app-wrapper-footer">
+              <div class="app-footer">
+                  <div class="app-footer__inner">
+                      <div class="app-footer-right">
+                          <ul class="nav">
+                              <li class="nav-item d-flex align-items-center">
+                                  Design and Developed By:
+                                  <a href="https://www.bms.com.ca" target="blank" class="nav-link">
+                                      BMS-Building Management System
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </section> 
+
+      </div>
+
+
+
+  </div>
+
+  
 </div>
-<!-----------------Full Body Area End------------------>
+<!-----------------Full Body Area End------------------>   
 
 <!------------Scripts-------------->
 <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
@@ -640,5 +693,6 @@
         document.querySelector(".preloader").style.display = "none";
     }
 </script>
+ 
 </body>
 </html>
