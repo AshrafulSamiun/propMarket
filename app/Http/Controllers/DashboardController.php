@@ -112,19 +112,6 @@ class DashboardController extends Controller
             // die;
 
 
-            // $data['module']=Module::where('status', '=', 1)->orderBy('modSlNo')->get();
-            // $data['menu']=DB::table('menus as menu')
-            //                 ->join('user_privileges as user_priv','menu.id','=','user_priv.main_menu_id')
-            //                 ->where('user_priv.user_id', '=', $user->id)
-            //                 ->where('user_priv.status_active', '=', 1)
-            //                 ->where('user_priv.is_deleted', '=', 0)
-            //                 ->where('menu.status', '=', 1)
-            //                 ->where('user_priv.show_priv', '=', 1)
-            //                 ->select('menu.*')
-            //                 ->orderBy('slno','ASC')
-            //                 ->get();
-
-
             $data['module']=Module::where('status', '=', 1)->orderBy('modSlNo')->get();
             $data['menu']=DB::table('menus as menu')
                             ->join('user_privileges as user_priv', function($join)
